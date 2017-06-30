@@ -21,11 +21,17 @@
             app:diagonal_angle="10"
             diagonal:diagonal_direction="left"
             diagonal:diagonal_position="bottom">
-
-            <ImageView
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="centerCrop" />
+                android:id="@+id/map"
+                tools:context=".MapsActivity"
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
+        </RelativeLayout>
         </com.github.florent37.diagonallayout.DiagonalLayout>
     </LinearLayout>
 </android.support.v4.widget.NestedScrollView>
