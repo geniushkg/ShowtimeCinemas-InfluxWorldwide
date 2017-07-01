@@ -6,4 +6,5 @@
     <string name="title_activity_sample">SampleActivity</string>
     <string name="googlemapkey">AIzaSyDFI_itXHuEMbjidFjInFuItgP9z-my5n4</string>
     <string name="title_activity_showtime">ShowtimeActivity</string>
+    <string name="cinemasaround">Cinemas around you</string>
 </resources>
