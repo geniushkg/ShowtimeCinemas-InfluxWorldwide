@@ -47,20 +47,33 @@
                     android:text="@string/cinemasaround"
                     android:textColor="@color/white"
                     common:font="NunitoR.ttf"/>
-                <view
+                <View
                     android:layout_width="@dimen/_1sdp"
                     android:layout_height="@dimen/_1sdp"
                     android:id="@+id/centeralLine"
                     android:layout_centerInParent="true"/>
+
+                <ImageView
+                    android:layout_width="@dimen/_50sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/firstpath"
+                    android:layout_above="@+id/centeralLine"
+                    android:layout_alignBottom="@+id/ivOvalYou"
+                    android:layout_toRightOf="@id/ivOvalYou"
+                    android:layout_marginLeft="@dimen/_minus3sdp"
+                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:id="@+id/ivFirstPath"
+                    />
                 <ImageView
                     android:layout_width="@dimen/_20sdp"
                     android:layout_height="@dimen/_20sdp"
-                    android:layout_centerVertical="true"
                     android:src="@drawable/you_oval"
                     android:layout_marginBottom="@dimen/_20sdp"
                     android:layout_marginLeft="@dimen/_40sdp"
                     android:layout_above="@+id/centeralLine"
+                    android:id="@+id/ivOvalYou"
                     />
+
             </RelativeLayout>
         </com.github.florent37.diagonallayout.DiagonalLayout>
         <ImageView
