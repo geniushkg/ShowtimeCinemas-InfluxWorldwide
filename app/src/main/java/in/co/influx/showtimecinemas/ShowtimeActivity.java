@@ -45,8 +45,9 @@ public class ShowtimeActivity extends AppCompatActivity implements OnMapReadyCal
         mMap = googleMap;
         //13.071778,80.2491799 - influxlatlong
         LatLng influxplex = new LatLng(13.071778,80.2491799);
-        mMap.addMarker(new MarkerOptions().position(influxplex).title("Influx Worldwide"));
+     //   mMap.addMarker(new MarkerOptions().position(influxplex).title("Influx Worldwide"));
         mMap.setMinZoomPreference(13);
         mMap.moveCamera(CameraUpdateFactory.newLatLng(influxplex));
+        mMap.getUiSettings().setAllGesturesEnabled(false);
     }
 }
